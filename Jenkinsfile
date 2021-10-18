@@ -5,7 +5,7 @@ pipeline {
             steps {
                 echo 'clone the repo'
                 sh 'cd /var/www/html'
-                sh 'git clone https://github.com/akashkumar0711/webapp1.git'
+                sh 'git clone https://github.com/akashkumar0711/Reveal.git'
             }
         }
     }
