@@ -13,6 +13,6 @@ pipeline {
         stage('Clean the repo') {
             steps {
                 echo 'clean the repo'
-                sh 'cleanWs()'
+                cleanWs()
     }
 }
