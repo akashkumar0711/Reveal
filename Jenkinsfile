@@ -5,7 +5,7 @@ pipeline {
             steps {
                 echo 'clone the repo'
                 
-                sh 'password for akash : ttn'
+                
                 sh 'rm -rf Reveal'
                 sh 'git clone https://github.com/akashkumar0711/Reveal.git' 
                 sh 'pwd'
