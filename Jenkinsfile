@@ -7,6 +7,7 @@ pipeline {
                 sh 'rm -fr Reveal'
                 sh 'cd /var/www/html'
                 sh 'git clone https://github.com/akashkumar0711/Reveal.git'
+                sh 'cp html_files/index.html /var/www/html/index.html'
                 
             }
         }
