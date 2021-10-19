@@ -12,7 +12,7 @@ pipeline {
                 sh 'cd /var/lib/jenkins/workspace/pipeline-demo/Reveal'
                 sh 'chmod 777 index.html'
                 
-                sh 'sudo cp -rf /var/lib/jenkins/workspace/pipeline-demo/Reveal/index.html /var/www/html/'
+                sh 'cp -rf /var/lib/jenkins/workspace/pipeline-demo/Reveal/index.html /var/www/html/'
                 sh 'pwd'
         
             }
