@@ -4,7 +4,7 @@ pipeline {
         stage('Clone the repo') {
             steps {
                 echo 'clone the repo'
-                sh 'sudo su'
+                
                 sh 'password for akash : ttn'
                 sh 'rm -rf Reveal'
                 sh 'git clone https://github.com/akashkumar0711/Reveal.git' 
