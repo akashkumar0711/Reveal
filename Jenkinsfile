@@ -8,9 +8,9 @@ pipeline {
                 sh 'git clone https://github.com/akashkumar0711/Reveal.git' 
                 sh 'pwd'
                 sh 'cd /var/lib/jenkins/workspace/pipeline-demo/Reveal'
-                sh 'chmod 777 /var/lib/jenkins/workspace/pipeline-demo/Reveal/index.html'
-                sh 'chmod 777 /var/www/html'
-                sh 'cp -r /var/lib/jenkins/workspace/pipeline-demo/Reveal/index.html /var/www/html'
+                sh 'sudo chmod 777 /var/lib/jenkins/workspace/pipeline-demo/Reveal/index.html'
+                sh 'sudo chmod 777 /var/www/html'
+                sh 'sudo cp -rf /var/lib/jenkins/workspace/pipeline-demo/Reveal/index.html /var/www/html'
                 sh 'pwd'
         
             }
