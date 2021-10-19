@@ -7,7 +7,9 @@ pipeline {
                 sh 'rm -rf Reveal'
                 sh 'git clone https://github.com/akashkumar0711/Reveal.git' 
                 sh 'pwd'
-                sh 'cp -r /var/lib/jenkins/workspace/pipeline-demo/Reveal/* /var/www/html'
+                sh 'cd /var/lib/jenkins/workspace/pipeline-demo/Reveal'
+                sh 'chmod 777 /var/www/html/index.html'
+                sh 'cp -r /var/lib/jenkins/workspace/pipeline-demo/Reveal/index.html /var/www/html'
                 sh 'pwd'
         
             }
